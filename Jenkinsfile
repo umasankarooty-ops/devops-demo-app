@@ -23,7 +23,7 @@ pipeline {
                     sh 'docker stop devops-demo-app || true'
                     sh 'docker rm devops-demo-app || true'
                     // Run new container
-                    sh 'docker run -d --name devops-demo-app -p 9090:8080 devops-demo-app'
+                    sh 'docker run -d --name devops-demo-app -p 9091:8080 devops-demo-app'
                 }
             }
         }
